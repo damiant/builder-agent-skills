@@ -40,13 +40,11 @@ After installing, start a new session for the skill to load.
 
 ## Creating Your Own Skills
 
-Use the **skill-creator** skill to build new skills for your project:
-
-1. Install the skill-creator (see above)
-2. In Builder, say "I want to create a skill that does X"
+1. Install the **skill-creator** skill into your Builder.io project (see Installation above)
+2. Open your project in Builder and say "I want to create a skill that does X"
 3. The skill-creator will guide you through the process
 
-Or read the [skill-creator SKILL.md](./skill-creator/SKILL.md) directly for best practices on writing skills.
+You can also read the [skill-creator SKILL.md](./skill-creator/SKILL.md) directly for best practices on writing skills.
 
 ## Project Structure
 
