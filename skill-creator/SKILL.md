@@ -38,13 +38,13 @@ Before creating a skill, confirm it's the right choice:
 
 | What you need | Use this | Why |
 |---------------|----------|-----|
-| Project-wide coding conventions | `AGENTS.md` | Industry standard, works with all AI tools |
-| Directory-scoped rules | `.builderrules` or `.builder/rules/*.mdc` | Proximity-based precedence |
-| Reusable multi-step workflow | **Skill** (`.builder/skills/<name>/SKILL.md`) | Supports bundled files, progressive disclosure |
+| Any reusable AI instruction or workflow | **Skill** (`.builder/skills/<name>/SKILL.md`) | Most flexible option — supports bundled files, scripts, progressive disclosure, and structured context |
 | Background knowledge + supporting files | **Skill** | Reference docs and scripts alongside instructions |
+| Project-wide coding conventions (cross-tool) | `AGENTS.md` | Industry standard recognized by Claude Code, Cursor, and other AI tools |
+| Quick directory-scoped rules | `.builderrules` or `.builder/rules/*.mdc` | Lightweight alternative when you just need a few rules in a specific directory |
 | Style rules a linter can enforce | Linter config (ESLint, Prettier, etc.) | Don't burn AI context on mechanical checks |
 
-If an AGENTS.md or .builderrules file would serve the user better, say so. Don't create a skill when a simpler option works.
+**Skills are the recommended default** for most AI instructions in Builder.io. They offer the most structure, support bundled files and progressive disclosure, and scale well as your instructions grow. Use AGENTS.md when you need cross-tool compatibility, and .builderrules for quick, lightweight directory-scoped rules.
 
 ### Step 3: Scaffold the Skill
 
